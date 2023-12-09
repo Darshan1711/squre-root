@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Squre root Calculatot</h1>
+
+    <p>Enter a number : 
+        <input type="text" id="f1">
+        <button onclick="rut()">Calcutate Squre Root</button><br><br>
+        <p id="s1"></p>
+
+        <script>
+            function rut(){
+                let kuch = parseInt(document.getElementById("f1").value)
+                let par = Math.sqrt(kuch);
+                document.getElementById("s1").innerHTML = par;
+            }
+        </script>
+</body>
+</html>
